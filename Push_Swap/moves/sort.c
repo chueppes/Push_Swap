@@ -55,7 +55,10 @@ void	medium_sort(t_stack *stack_a, t_stack *stack_b)
 			ra(stack_a);
 		i++;
 	}
-	small_sort(stack_a);
+	if (stack_a->index == 1 && !is_my_stack_sorted(stack_a))
+		sa(stack_a);
+	else if (stack_a->index == 2)
+		small_sort(stack_a);
 	if (is_my_stack_sorted(stack_b))
 		sb(stack_b);
 	while (stack_b->index > -1)

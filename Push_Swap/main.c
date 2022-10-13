@@ -6,7 +6,7 @@
 /*   By: acalvo4 <acalvo4@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 21:57:55 by acalvo4           #+#    #+#             */
-/*   Updated: 2022/10/11 21:57:56 by acalvo4          ###   ########.fr       */
+/*   Updated: 2022/10/11 22:23:03 by acalvo4          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ int	main(int argc, char **argv)
 
 	if (argc == 2 && ft_isalpha(argv[1][0]))
 		ft_puterror();
+	if (argc == 2)
+		exit(EXIT_SUCCESS);
 	stack_a = initialize_stack(argc - 1);
 	stack_b = initialize_stack(argc - 1);
 	build_stack(argc - 1, argv + 1, stack_a);
