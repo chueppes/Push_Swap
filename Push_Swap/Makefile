@@ -17,15 +17,15 @@ OBJS	=	$(SRCS:.c=.o)
 $(NAME):	$(OBJS)
 		@ make -s -C ./ft_printf
 		@ cc $(OBJS) -o $(NAME) $(LIBFTPRINTF)
-		@echo ">>[Push_Swap Compiled]"
-		@echo "..........[OK].........."
+		@echo ">> Push Swap Compiled 🔋"
+		@echo ">> OK ✅"
 
 all:		$(NAME)
 
 clean:
 		@ rm -f $(OBJS)
 		@ make clean -s -C ./ft_printf
-		@echo "All clean."
+		@echo ">> All clean 🗑️"
 		
 fclean:		clean
 		@ rm -f $(NAME)

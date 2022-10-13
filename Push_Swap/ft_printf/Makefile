@@ -14,10 +14,10 @@ OBJS	= $(SRC:.c=.o)
 	$(CC) $(CFLAGS) -I $(LIBRARY) -c $< -o $(<:.c=.o)
 
 $(NAME):	$(OBJS)
-	cd $(LIBRARY) && $(MAKE) && cp -v libft.a ../$(NAME)
+	cd $(LIBRARY) && $(MAKE) && cp libft.a ../$(NAME)
 		$(AR) $(NAME) $(OBJS)
 		ranlib $(NAME)
-		@echo ">>[Ft_printf Compiled]"
+		@echo ">> Libft Printf Compiled 📚"
 
 all:	$(NAME)
 

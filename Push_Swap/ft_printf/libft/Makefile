@@ -24,7 +24,6 @@ all:	${NAME}
 $(NAME):	${OBJ}
 	ar rcs ${NAME} ${OBJ}
 	ranlib ${NAME}
-	@echo ">>[Libft Compiled]"
 
 clean:
 	${RM} ${OBJ} 
